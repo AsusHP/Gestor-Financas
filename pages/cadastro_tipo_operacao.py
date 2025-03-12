@@ -1,13 +1,5 @@
 import streamlit as st
-import sys
-import streamlit as st
-from pathlib import Path
-
-# Adiciona o diretório raiz ao path
-root_dir = Path(__file__).parent.parent
-sys.path.append(str(root_dir))
-
-from tools.tipo_operacao import inserir_tipo_operacao, listar_tipo_operacao, atualizar_tipo_operacao, deletar_tipo_operacao
+from tools import inserir_tipo_operacao, listar_tipo_operacao, atualizar_tipo_operacao, deletar_tipo_operacao
 
 st.title("Gestão de Tipo de Operação de Gastos (Categorias)")
 

@@ -1,18 +1,8 @@
-from huggingface_hub import InferenceClient
 from dotenv import load_dotenv
-import streamlit as st
 import time
-import sys
 import streamlit as st
-from pathlib import Path
 
-# Adiciona o diretório raiz ao path
-root_dir = Path(__file__).parent.parent
-sys.path.append(str(root_dir))
-
-from tools.movimentacoes import gravar_movimentacao
-from tools.classes import listar_classes, inserir_classe, gerar_classificacao
-from tools.tipo_operacao import listar_tipo_operacao
+from tools import gravar_movimentacao, listar_classes, inserir_classe, gerar_classificacao, listar_tipo_operacao
 
 load_dotenv()
 

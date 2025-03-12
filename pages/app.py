@@ -1,12 +1,5 @@
-import sys
 import streamlit as st
-from pathlib import Path
-
-# Adiciona o diretório raiz ao path
-root_dir = Path(__file__).parent.parent
-sys.path.append(str(root_dir))
-
-from tools.login import verificar_senha
+from tools import verificar_senha
 
 if 'id_usuario' not in st.session_state:
     st.session_state['id_usuario'] = None

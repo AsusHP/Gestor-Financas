@@ -1,15 +1,6 @@
 import streamlit as st
 import datetime
-import sys
-import streamlit as st
-from pathlib import Path
-
-# Adiciona o diretório raiz ao path
-root_dir = Path(__file__).parent.parent
-sys.path.append(str(root_dir))
-
-
-from tools.movimentacoes import listar_movimentacoes, excluir_movimentacao
+from tools import listar_movimentacoes, excluir_movimentacao
 
 # 1) Título do app
 st.title("Filtrar e Excluir Movimentações")

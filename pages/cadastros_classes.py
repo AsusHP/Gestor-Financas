@@ -1,13 +1,5 @@
 import streamlit as st
-import sys
-import streamlit as st
-from pathlib import Path
-
-# Adiciona o diretório raiz ao path
-root_dir = Path(__file__).parent.parent
-sys.path.append(str(root_dir))
-
-from tools.classes import inserir_classe, listar_classes, atualizar_classe, deletar_classe
+from tools import inserir_classe, listar_classes, atualizar_classe, deletar_classe
 
 st.title("Gestão de Classes de Gastos (Categorias)")
 
