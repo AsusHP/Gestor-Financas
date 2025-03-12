@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from DB.connection import get_supabase_client
+from db import get_supabase_client
 from dotenv import load_dotenv
 from openai import OpenAI
 
