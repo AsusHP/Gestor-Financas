@@ -1,0 +1,7 @@
+huggingface-hub
+streamlit
+python-dotenv
+openai
+db-sqlite3
+bcrypt
+altair
