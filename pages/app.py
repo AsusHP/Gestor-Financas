@@ -29,7 +29,7 @@ if st.session_state['id_usuario']:
 else:
     st.write("## Login")
     email = st.text_input(label='E-mail')
-    senha = st.text_input(label='Senha')
+    senha = st.text_input(label='Senha', type='password')
 
     if st.button('Entrar'):
 

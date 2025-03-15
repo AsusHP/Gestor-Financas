@@ -17,7 +17,7 @@ def listar_classes(usuario_id: int) -> List[Tuple[int, str]]:
     )
     return [(item['id'], item['nome']) for item in response.data]
 
-def inserir_classe(nome, usuario_id):
+def inserir_classe(nome: str, usuario_id: int):
 
     classes_atuais = listar_classes(usuario_id)
     if nome not in [classe[1] for classe in classes_atuais]:
